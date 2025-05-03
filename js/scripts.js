@@ -136,4 +136,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('guide').addEventListener('click', function() {
         window.open('https://dionis404.github.io/Goblin-Guide/', '_self');
     });
+
+    // Обработчик для секции сообщества
+    const communitySection = document.getElementById('community');
+    if (communitySection) {
+        communitySection.addEventListener('click', function() {
+            window.open('https://t.me/URGSFL', '_blank');
+        });
+    }
 });

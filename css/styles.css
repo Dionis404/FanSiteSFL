@@ -378,12 +378,39 @@ nav a:focus {
 
 /* === Футер === */
 footer {
-    background-color: var(--primary-color);
     color: var(--background-color);
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    margin-top: -60px;
 }
+.footer-image {
+    width: 100%; /* подгоняет под ширину экрана */
+    height: auto; /* сохраняет пропорции */
+    display: block;
+}
+.footer-with-bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.footer-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 0px; /* отступ от нижнего края */
+    left: 53%;
+    transform: translateX(-50%);
+    color: rgb(32, 32, 32); /* или другой цвет */
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black; /* для читаемости */
+    pointer-events: none; /* чтобы не мешал кликам */
+}
+
 
 /* === Медиа запросы === */
 @media (max-width: 768px) {
@@ -409,3 +436,17 @@ footer {
         align-items: center;
     }
 }
+/* === Кликабельные секции === */
+.clickable-section {
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.clickable-section:hover .pixel-border-inner {
+    background-color: var(--hover-color);
+}
+
+.clickable-section * {
+    pointer-events: none;
+}
+
