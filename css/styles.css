@@ -377,11 +377,7 @@ nav a:focus {
 }
 
 /* === Футер === */
-footer {
-    color: var(--background-color);
-    text-align: center;
-    margin-top: -60px;
-}
+
 .footer-image {
     width: 100%; /* подгоняет под ширину экрана */
     height: auto; /* сохраняет пропорции */
